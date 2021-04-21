@@ -35,7 +35,7 @@ namespace API.Models
 
             cmd.CommandText = @"UPDATE users SET userstatus = @userstatus WHERE userid = @userid";
             cmd.Parameters.AddWithValue("@userid", userid);
-            if(tempreturntime.CompareTo(cvalue.duedate) > 0)
+            if(tempreturntime.CompareTo(cvalue.duedate) < 0)
             {
                 cmd.Parameters.AddWithValue("@userstatus", userstatus + 1);
             }
