@@ -5,11 +5,11 @@ namespace API
         public string cs {get;set;}
 
         public ConnectionString() {
-            string server = "g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-            string database = "iwbmu0augwse5a59";
+            string server = "grp6m5lz95d9exiz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+            string database = "e888djhmhrjjb2fc";
             string port = "3306";
-            string userName = "wvu2plbuaietvqt8";
-            string password = "c16vbyuutxke9npf";
+            string userName = "ujckh5e9fachqrw4";
+            string password = "x5fkxen6ryylyqn2";
 
             cs = $@"server={server};user={userName};database={database};port={port};password={password};";
         }
