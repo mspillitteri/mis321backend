@@ -23,8 +23,8 @@ namespace API.Models
             cmd.Prepare();
             cmd.ExecuteNonQuery();
 
-            cmd.CommandText = @"UPDATE checkouts SET isreturned = 1 WHERE checkoutid = @checkout_id";
-            cmd.Parameters.AddWithValue("@checkout_id", cvalue);
+            cmd.CommandText = @"DELETE FROM checkouts WHERE checkoutid = @checkout_id";
+            cmd.Parameters.AddWithValue("@checkout_id", cvalue.checkoutid);
             cmd.Prepare();
             cmd.ExecuteNonQuery();
 
